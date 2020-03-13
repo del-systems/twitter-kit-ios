@@ -371,6 +371,7 @@
 		7B154E6E19D33A5300B6B64C /* TWTRBezierPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B154E6C19D33A5300B6B64C /* TWTRBezierPaths.m */; };
 		7B154E7219D34B4700B6B64C /* TWTRBirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B154E7019D34B4700B6B64C /* TWTRBirdView.m */; };
 		7B964455199BDF27002117B5 /* TWTRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B964454199BDF27002117B5 /* TWTRKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87257BDE241BA4BC00260353 /* libTwitterCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D40087F1B1D033C0091E4D3 /* libTwitterCore.a */; };
 		9236048719F18F5F00532281 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9236048619F18F5F00532281 /* CoreData.framework */; };
 		92B9AC9119DF359D00E8BC68 /* UserWithEmailResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 92B9AC9019DF359D00E8BC68 /* UserWithEmailResponse.json */; };
 		92B9AC9319DF388E00E8BC68 /* UserWithEmptyEmailResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 92B9AC9219DF388E00E8BC68 /* UserWithEmptyEmailResponse.json */; };
@@ -555,7 +556,6 @@
 		DB22426C1C3F22AB008A6DC7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9489E1A1930B95000E5C4F7 /* Social.framework */; };
 		DB22426D1C3F22B3008A6DC7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370F2F1819B6980E00A51872 /* CoreText.framework */; };
 		DB22426E1C3F22BC008A6DC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370F2F1D19B698D400A51872 /* QuartzCore.framework */; };
-		DB22427F1C3F24A2008A6DC7 /* libTwitterCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D40087F1B1D033C0091E4D3 /* libTwitterCore.a */; };
 		DB2242801C3F24AF008A6DC7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9489E181930B93500E5C4F7 /* Security.framework */; };
 		DB2590821BA8B0F7008A9380 /* TwitterSocialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7FCB5A1AE59D5A008F41C9 /* TwitterSocialTests.m */; };
 		DB28A4D71CD419B60067FF72 /* VineTweetV13.json in Resources */ = {isa = PBXBuildFile; fileRef = DB28A4D11CD419B10067FF72 /* VineTweetV13.json */; };
@@ -678,6 +678,13 @@
 			remoteGlobalIDString = A97654E418E0B29B00E25169;
 			remoteInfo = "TwitterKit-static";
 		};
+		87257BE1241BA52C00260353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D4008771B1D033C0091E4D3 /* TwitterCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D5A92451AAA8D600039EFCC;
+			remoteInfo = TwitterCore;
+		};
 		9D40087E1B1D033C0091E4D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D4008771B1D033C0091E4D3 /* TwitterCore.xcodeproj */;
@@ -698,20 +705,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9D5A92461AAA8D600039EFCC;
 			remoteInfo = "TwitterCore-dynamic";
-		};
-		9D40088B1B1D059D0091E4D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9D4008771B1D033C0091E4D3 /* TwitterCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D5A92201AAA89730039EFCC;
-			remoteInfo = "TwitterCore-static";
-		};
-		BFE8397E1ADF23700035CBA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A97654DD18E0B29B00E25169 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A97654E418E0B29B00E25169;
-			remoteInfo = "TwitterKit-static";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1386,6 +1379,7 @@
 				AAF0C9F220119C2C0057F438 /* MapKit.framework in Frameworks */,
 				AAF0C9F120119C0A0057F438 /* CoreLocation.framework in Frameworks */,
 				37ED04661CE3E81C003DC129 /* SafariServices.framework in Frameworks */,
+				87257BDE241BA4BC00260353 /* libTwitterCore.a in Frameworks */,
 				DB2242801C3F24AF008A6DC7 /* Security.framework in Frameworks */,
 				DB22426E1C3F22BC008A6DC7 /* QuartzCore.framework in Frameworks */,
 				DB22426D1C3F22B3008A6DC7 /* CoreText.framework in Frameworks */,
@@ -1397,7 +1391,6 @@
 				DB2242671C3F218F008A6DC7 /* UIKit.framework in Frameworks */,
 				DB2242661C3F2188008A6DC7 /* CoreGraphics.framework in Frameworks */,
 				DB2242611C3F2181008A6DC7 /* CoreData.framework in Frameworks */,
-				DB22427F1C3F24A2008A6DC7 /* libTwitterCore.a in Frameworks */,
 				BFE839801ADF237A0035CBA1 /* libTwitterKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2928,7 +2921,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9D40088C1B1D059D0091E4D3 /* PBXTargetDependency */,
+				87257BE2241BA52C00260353 /* PBXTargetDependency */,
 			);
 			name = "TwitterKit-static";
 			productName = Social;
@@ -2947,7 +2940,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BFE8397F1ADF23700035CBA1 /* PBXTargetDependency */,
 			);
 			name = TwitterKit;
 			productName = "TwitterKit-dynamic";
@@ -3412,15 +3404,10 @@
 			target = A97654E418E0B29B00E25169 /* TwitterKit-static */;
 			targetProxy = 3703BEAE1A37E51B00AA639A /* PBXContainerItemProxy */;
 		};
-		9D40088C1B1D059D0091E4D3 /* PBXTargetDependency */ = {
+		87257BE2241BA52C00260353 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "TwitterCore-static";
-			targetProxy = 9D40088B1B1D059D0091E4D3 /* PBXContainerItemProxy */;
-		};
-		BFE8397F1ADF23700035CBA1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A97654E418E0B29B00E25169 /* TwitterKit-static */;
-			targetProxy = BFE8397E1ADF23700035CBA1 /* PBXContainerItemProxy */;
+			name = TwitterCore;
+			targetProxy = 87257BE1241BA52C00260353 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3500,10 +3487,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/Headers",
-					"$(BUILT_PRODUCTS_DIR)/Headers",
-				);
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -3529,10 +3512,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/Headers",
-					"$(BUILT_PRODUCTS_DIR)/Headers",
-				);
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
